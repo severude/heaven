@@ -3,7 +3,8 @@ body {
     font-weight: 300;
     font-size: 1em;
     margin: 0;
-    color: #555;
+    color: #333;
+    background-color: #f9f9f9;
 }
 .container {
     margin-right: auto;
@@ -62,7 +63,7 @@ sup {
     margin-left: -3.75em;
     bottom: 100%;
     left: 50%; 
-    background-color: #555;
+    background-color: #333;
     color: #fff;
     text-align: center;
     font-size: .75em;
