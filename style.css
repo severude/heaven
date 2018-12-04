@@ -1,0 +1,93 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    margin: 0;
+    color: #555;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5em;
+    margin-bottom: 4em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+h1 {
+    text-align: center;
+}
+p {
+    margin: .75em 5%;
+}
+sup {
+    color: blue;
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
+
+/* Media query for paragraph margins and fond size */
+@media (min-width: 48em) {
+    p {
+        font-size: 1.125em;
+        margin: .75em 5%;
+    }
+}
+@media (min-width: 62em) {
+    p {
+        margin: .75em 15%;
+    }
+}
+@media (min-width: 75em) {
+    p {
+        margin: .75em 21%;
+    }
+}
+@media (min-width: 87em) {
+    p {
+        margin: .75em 26%;
+    }
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 7.5em;
+    margin-left: -3.75em;
+    bottom: 100%;
+    left: 50%; 
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    font-size: .75em;
+    padding: 5px 5px;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity .5s;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
